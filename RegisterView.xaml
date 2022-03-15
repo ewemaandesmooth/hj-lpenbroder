@@ -1,0 +1,147 @@
+﻿<Window x:Class="MVVM.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent" WindowStyle="None" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Purple" Offset="0.0"/>
+                        <GradientStop Color="Blue"  Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Text="Full name"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="Black"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Margin="64,178,81,244"/>
+
+            </Border>
+            <Border Width="250"
+                        Height="2"
+                        Background="Black"
+                        Opacity="0.5" Margin="64,201,66,22"/>
+
+
+            <StackPanel VerticalAlignment="Center" Height="152" Margin="0,10,0,63">
+                <Button x:Name="CloseButton" Content="X" Height="20" Click="CloseButton_Click" Margin="333,0,20,0" Background="Transparent"/>
+                <Image Source="PartyBnB.png" Height="112" Width="190" Margin="95,0"/>
+                <TextBlock Text=" ''Drink,  Rave,  Sleep,  Repeat''"
+                           FontWeight="Light"
+                           FontFamily="Broadway"
+                           FontSize="15"
+                           Foreground="Black"
+                           HorizontalAlignment="Center" Height="29" Margin="68,0,65,0" Width="247"/>
+            </StackPanel>
+
+
+
+            <StackPanel Grid.Row="1" >
+
+
+                <StackPanel Orientation="Horizontal"/>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Text="E-mail"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="Black"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="24"
+                             Margin="63,0,0,0"/>
+
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="Black"
+                        Opacity="0.5"/>
+
+
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <PasswordBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Password="Password"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="Black"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="24"
+                             Margin="63,0,0,0"/>
+
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="Black"
+                        Opacity="0.5" 
+                        Margin="65,0"/>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Height="44">
+                    <TextBlock Text = " Confirm password"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="11"
+                           Foreground="Black"
+                           Opacity="0.5"
+                           HorizontalAlignment="Center" 
+                           Margin="63,0,0,31" 
+                           Width="102" />
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="Black"
+                        Opacity="0.5" 
+                        Margin="65,-10">
+                    <PasswordBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             Password="Password"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="Black"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="209"
+                             HorizontalContentAlignment="Left"
+                             Margin="0,-26,41,0" Height="28" VerticalAlignment="Bottom"/>
+                </Border>
+
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Height="52">
+                    <Button Width="100" Height="40" Content="BACK" FontSize="18" Margin="60,0,60,0" Foreground="Purple" Background="Black" Click="Button_Click"/>
+                    <Button Width="100" Height="40" Content="REGISTER" FontSize="18" Foreground="Purple" Background="Black"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Height="50"/>
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
